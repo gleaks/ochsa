@@ -1,0 +1,2 @@
+Template.forms.onRendered ->
+    counters()

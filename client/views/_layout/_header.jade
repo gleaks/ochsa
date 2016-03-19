@@ -1,0 +1,44 @@
+template(name="_header")    
+    // HEADER
+    header#header.header-transparent.header-dark
+        #header-wrap
+          .container
+            // LOGO
+            #logo
+              a.logo(href='{{pathFor "/"}}')
+                img(src='img/logo.png', alt='OCHSA Logo')
+            // END: LOGO
+            
+            // MOBILE MENU
+            .nav-main-menu-responsive
+              button.lines-button.x(type='button', data-toggle='collapse', data-target='.main-menu-collapse')
+                span.lines
+            // END: MOBILE MENU
+            
+            // TOP SEARCH
+            #top-search
+              a#top-search-trigger
+                i.fa.fa-search
+                i.fa.fa-close
+              form(action='search-results-page.html', method='get')
+                input.form-control(type='text', name='q', value='', placeholder='Start typing & press  "Enter"')
+            // END: TOP SEARCH
+            
+            // NAVIGATION
+            .navbar-collapse.collapse.main-menu-collapse.navigation-wrap
+              .container
+                nav#mainMenu.main-menu
+                  ul.main-menu.nav.nav-pills
+                    li.dropdown.active
+                      a.nav-to(href='{{pathFor "/"}}')
+                        i.fa.fa-home
+                    li.dropdown
+                      a.nav-to(href='{{pathFor "/news"}}') News
+                    li.dropdown
+                      a.nav-to(href='{{pathFor "/forms"}}') Forms
+                    li.dropdown
+                      a.nav-to(href='{{pathFor "/schedule"}}') Schedule
+                    li.dropdown
+                      a.nav-to(href='{{pathFor "/contact"}}') Contact
+            // END: NAVIGATION
+    // END: HEADER

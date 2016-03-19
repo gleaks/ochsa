@@ -1,0 +1,68 @@
+template(name="contact")
+    section#page-title.page-title-parallax.text-light(data-stellar-background-ratio='0.4', style='background-image: url("img/header.jpg");')
+      .container
+        .page-title.col-md-8
+          h1.text-uppercase.text-medium CONTACT
+    section
+      .container
+        .row
+          .col-md-6
+            h3.text-uppercase Get In Touch
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum porttitor cursus. Duis nec nulla turpis. Nulla lacinia laoreet odio, non lacinia nisl malesuada vel. Aenean malesuada fermentum bibendum.
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla luctus. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
+            .row.m-t-40
+              .col-md-12
+                address
+                  strong Orange County Horse Show Association
+                  br
+                  | 			  P.O. Box 80805
+                  br
+                  | 			  Rancho Santa Margarita, CA 92688
+                  br
+                  abbr(title='Phone') P:
+                  | (949) 230-0790
+                  br
+                  abbr(title='Fax') F:
+                  | (800) 595-9531
+            .social-icons.m-t-30.social-icons-colored
+              ul
+                li.social-facebook
+                  a(href='#')
+                    i.fa.fa-facebook
+                li.social-twitter
+                  a(href='#')
+                    i.fa.fa-twitter
+                li.social-google
+                  a(href='#')
+                    i.fa.fa-google-plus
+                li.social-pinterest
+                  a(href='#')
+                    i.fa.fa-pinterest
+                li.social-vimeo
+                  a(href='#')
+                    i.fa.fa-vimeo-square
+                li.social-linkedin
+                  a(href='#')
+                    i.fa.fa-linkedin
+          .col-md-6
+            form#widget-contact-form(action='include/contact-form.php', role='form', method='post', novalidate='novalidate')
+              .row
+                .form-group.col-sm-6
+                  label(for='name') Name
+                  input.form-control.required.name(type='text', aria-required='true', name='widget-contact-form-name', placeholder='Enter your Name')
+                .form-group.col-sm-6
+                  label(for='email') Email
+                  input.form-control.required.email(type='email', aria-required='true', name='widget-contact-form-email', placeholder='Enter your Email')
+              .row
+                .form-group.col-sm-12
+                  label(for='subject') Your Subject
+                  input.form-control.required(type='text', name='widget-contact-form-subject', placeholder='Subject...', aria-required='true')
+              .form-group
+                label(for='message') Message
+                textarea.form-control.required(type='text', name='widget-contact-form-message', rows='5', placeholder='Enter your Message', aria-required='true')
+              input#widget-contact-form-antispam.hidden(type='text', name='widget-contact-form-antispam', value='')
+              button#form-submit.btn.btn-primary(type='submit')
+                i.fa.fa-paper-plane
+                | Send message

@@ -1,0 +1,165 @@
+template(name="home")
+  section.page-title-parallax.halfscreen(style='background-image:url(/img/background.jpg); top: -130px; margin-bottom: -130px;' data-stellar-background-ratio="0.5")
+    .container
+      .container-fullscreen
+        .row
+          .float-left.text-left.col-md-8.p-t-20
+            .hero-heading-2(style="opacity: 0.9")
+              h1.text-colored.text-large
+                | OCHSA + 
+                span.text-rotator(data-rotate-effect="fadeIn" data-rotate-speed="3000") FUN, FRIENDS, HORSES
+              p.lead.text-light
+                | Promoting quality horse shows for Orange County riders. Join online today or see shows near you.
+            a.button.purple.button-3d.rounded.icon-left(href="#" data-animation="fadeInUp" data-animation-delay="600")
+              i.fa.fa-users
+              | Join today
+            a.button.color.button-3d.rounded.icon-left(href="{{pathFor '/schedule'}}" data-animation="fadeInUp" data-animation-delay="600")
+              i.fa.fa-info
+              | Learn more
+  section.p-t-40.p-b-40(style='background-image:url(/img/paper_fibers.png);')
+      .container
+          .heading
+              h2.text-green The Orange County Horse Show Association
+                  i.float-right.animated.visible.flash.fa.fa-angle-down(data-animation="flash" data-animation-delay="7000")
+              span.lead Letter from the president
+          .row
+              .col-sm-12
+                  p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat consectetur pharetra. Curabitur rhoncus urna a ligula ultrices, at iaculis metus maximus. In in vestibulum purus. Praesent sodales tortor non nulla efficitur commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in consequat metus, eget egestas lacus. Suspendisse eros neque, accumsan quis purus a, ultricies efficitur purus. Nam vestibulum neque eu neque rhoncus scelerisque ut sit amet mi. Mauris blandit facilisis orci. Vestibulum tincidunt pharetra ipsum eget elementum. Donec sit amet massa ultricies, egestas nibh venenatis, fermentum enim.
+          .row
+              .col-sm-12
+                  p Pellentesque porttitor est eu est maximus, vel laoreet eros pharetra. Donec vestibulum ullamcorper urna ac dictum. Mauris rutrum, risus quis luctus convallis, leo arcu sodales tellus, euismod tincidunt turpis nunc non eros. In id ligula ut leo luctus mattis et in arcu. Vivamus dapibus elit vel sem varius, in dapibus nibh tempor. Pellentesque dictum semper est, sit amet facilisis nibh porta vitae. Cras ut eros et enim efficitur placerat. Pellentesque ornare felis arcu, a finibus ligula elementum ut.
+          .row
+              .col-sm-8.float-right
+                  img.img-responsive(src="img/polaroids.png")
+              .col-sm-4
+                  img.img-responsive(src="img/signature.png")
+                  h4 Julie O'Connor, President
+                  a.button.color.button-3d.rounded.icon-left(href="#" data-animation="fadeInUp" data-animation-delay="600")
+                      i.fa.fa-calendar
+                      | Show schedule
+                  br
+                  a.button.purple.button-3d.rounded.icon-left(href="#" data-animation="fadeInUp" data-animation-delay="600")
+                      i.fa.fa-plus
+                      | Download forms
+  .jumbotron.jumbotron-fullwidth.background-colored.text-light
+      .container
+          h3 Want to become a sponsor?
+          p The OCHSA is a non-profit organization and is always looking for sponsors.
+          a.button.transparent.rounded.icon-left(href="#" data-animation="fadeInUp" data-animation-delay="600")
+              i.fa.fa-heart
+              | Download the form
+  section.p-t-40.p-b-40
+    .container
+      .row
+        .col-md-4.post-content.post-modern
+          .heading.m-b-40
+            h3.text-green Latest News
+          .post-item
+            .post-image
+              a(href="#")
+                img(src="/img/news1.jpg")
+            .post-content-details
+              .post-title
+                h3
+                  a(href="#") OCHSA gets new website
+              .post-description
+                p.m-b-15 Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
+                .post-read-more
+                  a.read-more(href="#")
+                    | read more
+                    i.fa.fa-long-arrow-right
+            .post-meta
+              .post-date
+                span.post-date-day 13
+                span.post-date-month February
+                span.post-date-year 2016
+              .post-comments
+                a(href="#")
+                  i.fa.fa-comments-o
+                  span.post-comments-number 324
+        .col-md-4
+          .heading.m-b-40
+            h3.text-green Latest Photos
+          .m-l-30.m-r-30
+            .row
+              .col-xs-4.img-widget
+                .effect.social-links
+                  .img-square
+                    img.img-responsive(src="/img/instagram/1.jpg")
+                  .image-box-content
+                    p
+                      a(href="/img/instagram/1.jpg")
+                        i.fa.fa-expand
+              .col-xs-4.img-widget
+                .effect.social-links
+                  .img-square
+                    img.img-responsive(src="/img/instagram/2.jpg")
+                  .image-box-content
+                    p
+                      a(href="/img/instagram/2.jpg")
+                        i.fa.fa-expand
+              .col-xs-4.img-widget
+                .effect.social-links
+                  .img-square
+                    img.img-responsive(src="/img/instagram/1.jpg")
+                  .image-box-content
+                    p
+                      a(href="/img/instagram/1.jpg")
+                        i.fa.fa-expand
+            .row
+              .col-xs-4.img-widget
+                .effect.social-links
+                  .img-square
+                    img.img-responsive(src="/img/instagram/2.jpg")
+                  .image-box-content
+                    p
+                      a(href="/img/instagram/2.jpg")
+                        i.fa.fa-expand
+              .col-xs-4.img-widget
+                .effect.social-links
+                  .img-square
+                    img.img-responsive(src="/img/instagram/1.jpg")
+                  .image-box-content
+                    p
+                      a(href="/img/instagram/1.jpg")
+                        i.fa.fa-expand
+              .col-xs-4.img-widget
+                .effect.social-links
+                  .img-square
+                    img.img-responsive(src="/img/instagram/2.jpg")
+                  .image-box-content
+                    p
+                      a(href="/img/instagram/2.jpg")
+                        i.fa.fa-expand
+          .row.p-t-20
+             .icon-box.effect.medium.color.m-t-20
+              .icon
+                i.fa.fa-instagram
+              h3 Post your photos!
+              p To add your own photos to our gallery just tag them #OCHSA on Instagram!
+        .col-md-4
+          .heading.m-b-40
+            h3.text-green Upcoming Shows
+          .p-15.p-t-0.border-bottom
+            span
+              i.fa.fa-calendar
+              | Feb. 19 - 27
+            h5 Harvest Festival
+            p
+              b Where:
+              | RMVRP
+              br
+              b Manager:
+              | Robin Bobaloo (760) 123-1420
+          .p-15.border-bottom
+            span
+              i.fa.fa-calendar
+              | Mar. 22 - 29
+            h5 OCHSA Championship Show
+            p
+              b Where:
+              | Del Mar
+              br
+              b Manager:
+              | Robin Bobaloo (760) 123-1420
+          
